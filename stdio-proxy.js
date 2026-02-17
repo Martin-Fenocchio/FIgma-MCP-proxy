@@ -85,6 +85,8 @@ async function main() {
 
   const transport = new StdioServerTransport();
   await server.connect(transport);
+
+  console.log("Server started");
 }
 
 main().catch((e) => {
